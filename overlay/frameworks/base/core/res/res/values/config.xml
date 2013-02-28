@@ -64,12 +64,8 @@
          Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
          should be empty.  An example would be "softap.*" -->
     <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"wl0.1"</item>
+        <item>"wlan0"</item>
     </string-array>
-
-    <!-- Boolean indicating whether the start command should be called on the wireless interface
-         when starting the SoftAp -->
-	<!-- <bool name="config_wifiApStartInterface">true</bool> -->
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
@@ -123,6 +119,16 @@
     <integer-array name="config_scrollBarrierVibePattern">
         <item>40</item>
     </integer-array>
+
+    <!-- Package name providing network location support. -->
+    <string name="config_networkLocationProviderPackageName" translatable="false">com.google.android.location</string>
+
+    <!-- Package name providing geocoder API support. -->
+    <string name="config_geocodeProviderPackageName" translatable="false">com.google.android.location</string>
+
+    <!-- Boolean indicating if current platform supports quick switch-on/off of
+         Bluetooth Module -->
+    <bool name="config_bluetooth_adapter_quick_switch">false</bool>
 
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">pdp0</string>
