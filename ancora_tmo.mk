@@ -75,11 +75,11 @@ PRODUCT_COPY_FILES += \
 
 # Modules
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/bcmdhd.ko:root/lib/modules/bcmdhd.ko \
+    $(LOCAL_PATH)/prebuilt/dhd.ko:root/lib/modules/dhd.ko \
     $(LOCAL_PATH)/prebuilt/cifs.ko:root/lib/modules/cifs.ko \
     $(LOCAL_PATH)/prebuilt/scsi_wait_scan.ko:root/lib/modules/scsi_wait_scan.ko \
     $(LOCAL_PATH)/prebuilt/cifs.ko:system/lib/modules/cifs.ko \
-    $(LOCAL_PATH)/prebuilt/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+    $(LOCAL_PATH)/prebuilt/dhd.ko:system/lib/modules/dhd.ko \
     $(LOCAL_PATH)/prebuilt/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
 
 # LPM
@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     setup_fs
 
 PRODUCT_PACKAGES += \
+    com.android.future.usb.accessory \
     hciconfig \
     hcitool \
     libaudioutils
